@@ -1,0 +1,383 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fbfbfb;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #00A8E0;
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    font-size: 18px;
+    font-weight: 500;
+    color: #003459;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #007EA7;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 10%;
+    text-align: center;
+    background: url(/Users/abhilashasinha/Desktop/Abhilasha/Portfolio/myprofile.png) no-repeat center/cover;
+    background-position: left;
+    height:100vh;
+}
+
+.home-content h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #04080F;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+.home-content h1 {
+    padding-left: 4spx;
+    font-size: 48px;
+    font-weight: 700;
+    color: #BBD1EA;
+    margin-bottom: 10px;
+    display: inline;
+}
+
+.home-content h3 small {
+    font-size: 18px;
+    font-weight: 400;
+    color: #007EA7;
+}
+
+.home-content p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #003459;
+    margin-bottom: 30px;
+   
+}
+
+.contact a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color:#DAE3E5;
+    color: #003459;
+    font-size: 25px;
+    line-height: 52px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.contact a:hover {
+    background: #507DBC;
+    color: #f4f6f8;
+    box-shadow: 0 0 20px #003459;
+
+}
+.more{
+    margin-top: 5%;
+    justify-content: left;
+    inline-size: 1.2;
+    font-size: 20px;
+}
+.details{
+    color: #04080F;
+}
+
+/* About Section */
+.about {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.about .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 15px;
+}
+
+.education,
+.profession {
+    font-size: 24px;
+    font-weight: 600;
+    color: #003459;
+    margin-bottom: 20px;
+}
+
+.contents {
+    background-color: #DAE3E5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+.contents img{
+    height: 50px;
+    width: auto;
+    padding-left: 0px;
+}
+
+.date {
+    font-size: 18px;
+    font-weight: 600;
+    color: #003459;
+    margin-bottom: 10px;
+}
+
+.contents p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #003459;
+    margin-bottom: 10px;
+}
+
+/* Skills Section */
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #DAE3E5;
+    padding: 10%;
+    color: white;
+    text-align: center;
+  }
+  .tech{
+    display: block;
+  }
+  .heading1{
+    font-weight: 700;
+    color: #003459;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    display: block;
+}
+.skill {
+    display: block;
+    margin-top: 20px;
+    background-color: #311b92;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skill img {
+    max-width: auto;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+
+
+.Technical-bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bar {
+    width: 200px;
+    margin: 0 20px;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.progress-line {
+    width: 100%;
+    height: 20px;
+    background-color: #DAE3E5;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-line span {
+    display: block;
+    height: 100%;
+    background-color: #003459;
+    border-radius: 10px;
+    animation: progress 2s ease-in-out forwards;
+}
+
+@keyframes progress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-content h3 {
+        font-size: 28px;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+    .contact a {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .col {
+        max-width: 100%;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .contact a {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
+.section-projects {
+    
+    padding: 20px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    margin:15px;
+    transition: all 0.25s;
+}
+.project-item:hover{
+    box-shadow:0px 5px 4px rgba(0, 0, 0, 0.1) ;
+    cursor: pointer;
+}
+
+.project-image {
+    width: 100%;
+    height: 350px;
+    display: cover;
+    opacity: 90%;
+
+}
+
+.project-title {
+    margin: 15px;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    padding: 0 15px 15px;
+    height: 150px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 15px 15px;
+}
+.mail{
+    background-color: #04080F;
+    padding: 5% 10%;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+
+}
+.mail a{
+    color: white;
+    text-decoration: underline;
+}
+.mail a:hover{
+    color:royalblue;
+}
